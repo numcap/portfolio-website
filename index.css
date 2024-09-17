@@ -1,0 +1,197 @@
+/* Variables */
+:root {
+    --background-black: #141619;
+    --background-gray: #2C2E3A;
+    --background-darkblue: #050a44;
+    --main-blue: #0a21c0;
+    --main-gray: #B3b4bd;
+}
+
+* {
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    height: 2rem;
+    background-color: var(--background-darkblue);
+    display: flex;
+    justify-content: center;
+    vertical-align: auto;
+    align-items: center;
+    height: auto;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+}
+
+.header a {
+    padding: 10px 30px;
+    margin: 10px 30px;
+    border-radius: 10px;
+    background-color: var(--main-blue);
+    text-decoration: none;
+    color: white;
+    transition: background-color 1s ease;
+
+}
+.header a:hover {
+    background-color: var(--main-blue);
+}
+
+.hero-section {
+    background-image: url(background.jpg);
+    background-size: cover;
+    height: 50rem;
+}
+
+.hero-info {
+    border: #162432 solid 2px;
+    text-align: center;
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--background-gray);
+    border-radius: 100px;
+    padding: 3rem;
+    opacity: 0.8;
+    transition: opacity 0.2s linear;
+    color: whitesmoke;
+}
+.hero-info:hover {
+    opacity: 1;
+}
+
+.hero-info h2 {
+    margin-bottom: 30px;
+}
+
+.hero-info a {
+    text-decoration: none;
+    background-color: var(--main-blue);
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.about-me {
+    margin: 5rem 20vw;
+}
+
+.about-me h2 {
+    font-size: 40px;
+}
+
+.about-me p {
+    font-size: 20px;
+}
+
+.experience {
+    margin: 5rem 20vw;
+}
+
+.experience h2 {
+    font-size: 40px;
+}
+
+.experience h3 {
+    font-size: 24px;
+}
+
+.experience p {
+    font-size: 20px;
+}
+
+.animation {
+    color: transparent;
+    transform: translate(-25%,0);
+    transition: all 500ms linear;
+}
+
+.scroll-animation {
+    color: black;
+    transform: translate(0);
+}
+
+.contact-me {
+    border: solid pink 1px;
+    margin: 5rem 20vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #2C2E3A;
+    border-radius: 50px;
+    color: white;
+    padding: 2rem 5rem;
+
+}
+
+.contact-me form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+    background-color: #2C2E3A;
+}
+
+.contact-me input {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #162432;
+    color: white;
+}
+
+.contact-me label {
+    margin-top: 10px;
+}
+.contact-me button {
+    padding: 15px 30px;
+    width: fit-content;
+    margin: auto;
+    border: none;
+    background-color: var(--background-darkblue);
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+
+    transition: background-color 300ms ease-in;
+}
+
+.contact-me button:hover {
+    background-color: var(--main-blue);
+}
+
+.contact-me textarea {
+    resize: none;
+    height: 5rem;
+    width: auto;
+    margin-bottom: 10px;
+    background-color: #162432;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.contact-me h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+
+.footer {
+    background-color: #0a21c0;
+    color: white;
+    height: 4rem;
+    font-size: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
