@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    This is a website
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="index.css" />
+		<script src="index.js"></script>
+		<title>Personal Portfolio</title>
+	</head>
+	<body>
+		<div class="header">
+			<a href="#home">Home</a>
+			<a href="#about">About</a>
+			<a href="#contact">Contact</a>
+		</div>
+		<div class="hero-section">
+			<div class="hero-info">
+				<h1>Jonathan Ishak</h1>
+				<h2>Second Year Software Engineer</h2>
+				<a href="#home">Learn More</a>
+			</div>
+		</div>
+
+		<div class="about-me animation" id="home">
+			<h2>Who am I?</h2>
+			<p>
+				Hi, I'm Jonathan Ishak, an aspiring software engineer with a passion for
+				creating efficient, scalable, and user-friendly applications. Currently,
+				I'm in my second year of studies, working towards my degree in Software
+				Engineering at Western University. I'm deeply interested in software
+				development, with a focus on front-end technologies like React, and
+				back-end services like Firebase
+			</p>
+			<p>
+				As a professional, I enjoy tackling complex problems and constantly
+				learning new skills that will help me grow in the tech world. My
+				technical skill-set includes proficiency in JavaScript, React, Firebase,
+				and testing with Jest, as well as a solid understanding of algorithms
+				and data structures. I've worked on several personal projects, including
+				web apps, which have helped me strengthen my coding abilities and
+				collaborative skills.
+			</p>
+		</div>
+		<div class="experience animation" id="about">
+			<h2>Experience</h2>
+			<h3>AGM Construction Website</h3>
+			<p>A web application built using React that allows users to access the home company's website. The app focuses on providing a
+			smooth user experience with real-time updates. Full-Stack Engineer,
+            gaining practical experience in React, NodeJS, ExpressJS and FTP
+            servers</p>
+            <h3>ToApp</h3>
+            <p>Developed a task management tool with a sleek interface that
+			helps users stay organized. This project showcases my skills in state
+			management and API integration. Used React, Firebase, and Jest</p>
+		</div>
+        <div class="contact-me">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Full Name" />
+                <label for="name">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" />
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Enter Your Thoughts"></textarea>
+                <button type="button">Submit</button>
+            </form>
+        </div>
+        <div class="footer">
+            Jonathan Ishak ©
+        </div>
+	</body>
 </html>
